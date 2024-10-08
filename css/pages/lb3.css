@@ -1,0 +1,68 @@
+/* Background and overall styling */
+body {
+    background-color: #98bce4;
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #0044aa;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.intro {
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #0044aa;
+}
+
+h2 {
+    color: #0044aa;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px auto 10px;
+}
+
+/* Code block styling */
+pre {
+    color: #0044aa;
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Paragraph styling for body text */
+p {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+address {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 50px;
+    color: #000;
+}
+
+/* Footer styles */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
