@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Задания</title>
+</head>
+<body>
+
+<h1>Статистика продажу автомобілів</h1>
+<table border="1">
+  <caption>Статистика продажу автомобілів</caption>
+  <tr>
+    <th>Марка автомобіля</th>
+    <th>Січень</th>
+    <th>Лютий</th>
+    <th>Березень</th>
+  </tr>
+  <tr>
+    <td>Toyota</td>
+    <td>270 000</td>
+    <td>250 000</td>
+    <td>300 000</td>
+  </tr>
+  <tr>
+    <td>Volkswagen</td>
+    <td>250 000</td>
+    <td>200 000</td>
+    <td>270 000</td>
+  </tr>
+  <tr>
+    <td>Renault-Nissan</td>
+    <td>130 000</td>
+    <td>150 000</td>
+    <td>200 000</td>
+  </tr>
+  <tr>
+    <td>ВСЬОГО:</td>
+    <td>650 000</td>
+    <td>600 000</td>
+    <td>770 000</td>
+  </tr>
+</table>
+
+<h1>Розклад занять</h1>
+<table border="1">
+  <caption>Розклад занять</caption>
+  <tr>
+    <th>День тижня</th>
+    <th>Академічні години</th>
+    <th>КН-2.01</th>
+    <th>КН-2.02</th>
+    <th>КН-2.03</th>
+  </tr>
+  <tr>
+    <td rowspan="4" style="writing-mode: vertical-rl; text-align: center;">Понеділок</td>
+    <td>8.00-9.20</td>
+    <td>Веб-технології та веб-дизайн</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9.35-10.55</td>
+    <td>Об'єктно-орієнтоване програмування</td>
+    <td>Комп'ютерна дискретна математика</td>
+    <td>Теорія алгоритмів</td>
+  </tr>
+  <tr>
+    <td>11.10-12.30</td>
+    <td>Теорія алгоритмів</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12.45-14.05</td>
+    <td>Комп'ютерна дискретна математика</td>
+    <td>Теорія алгоритмів</td>
+    <td>Об'єктно-орієнтоване програмування</td>
+  </tr>
+</table>
+
+<h1>Форма реєстрації</h1>
+<form action="/submit" method="post">
+  <label for="name">Ім'я:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="gender">Стать:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Чоловіча</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Жіноча</label><br><br>
+
+  <label for="comments">Коментарі:</label><br>
+  <textarea id="comments" name="comments"></textarea><br><br>
+
+  <input type="submit" value="Відправити">
+</form>
+
+</body>
+</html>
