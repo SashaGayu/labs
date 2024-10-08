@@ -1,152 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Lesson 3!</title>
-
-  <style type="text/css">
-    /* Background and overall styling */
-    body {
-      background-color: #98bce4;
-      color: #000;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      color: #0044aa;
-      font-size: 48px;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    p.intro {
-      font-size: 18px;
-      text-align: center;
-      width: 80%;
-      margin: 20px auto;
-      line-height: 1.8;
-      color: #0044aa;
-    }
-
-    h2 {
-      color: #0044aa;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      margin: 30px auto 10px;
-    }
-
-    /* Code block styling */
-    pre {
-      color: #0044aa;
-      padding: 15px;
-      width: 80%;
-      margin: 20px auto;
-      font-size: 16px;
-      text-align: left;
-    }
-
-    /* Paragraph styling for body text */
-    p {
-      width: 80%;
-      margin: 10px auto;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    address {
-      text-align: center;
-      font-size: 14px;
-      font-style: italic;
-      margin-top: 50px;
-      color: #000;
-    }
-
-    /* Footer styles */
-    footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Задания</title>
 </head>
-
 <body>
-<h1>Подключение CSS</h1>
-<p class="intro">
-  CSS (англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
-  Преимущественно используется как средство описания, оформления внешнего вида веб-страниц, написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам, например, к SVG или XUL.<br>Существует три способа подключения CSS к документу HTML.
-</p>
 
-<h2>Встроенные (внутриэлементные) стили</h2>
-<p>
-  При внутриэлементном или строчном подключении стиля, он определяется непосредственно внутри тега HTML при помощи атрибута style.
-  Это выглядит следующим образом:
-</p>
-<pre>
-        &lt;p style="color: red"&gt; текст &lt;/p&gt;
-    </pre>
-<p>
-  Данное определение сделает параграф красного цвета.
-  Однако, как вы, наверное, помните, лучший подход – это когда HTML документ полностью свободен от элементов и атрибутов визуального представления, поэтому внутриэлементный способ определения стилей следует стараться избегать.
-</p>
+<h1>Статистика продажу автомобілів</h1>
+<table border="1">
+    <caption>Статистика продажу автомобілів</caption>
+    <tr>
+        <th>Марка автомобіля</th>
+        <th>Січень</th>
+        <th>Лютий</th>
+        <th>Березень</th>
+    </tr>
+    <tr>
+        <td>Toyota</td>
+        <td>270 000</td>
+        <td>250 000</td>
+        <td>300 000</td>
+    </tr>
+    <tr>
+        <td>Volkswagen</td>
+        <td>250 000</td>
+        <td>200 000</td>
+        <td>270 000</td>
+    </tr>
+    <tr>
+        <td>Renault-Nissan</td>
+        <td>130 000</td>
+        <td>150 000</td>
+        <td>200 000</td>
+    </tr>
+    <tr>
+        <td>ВСЬОГО:</td>
+        <td>650 000</td>
+        <td>600 000</td>
+        <td>770 000</td>
+    </tr>
+</table>
 
-<h2>Внутренние стили</h2>
-<p>
-  Внутридокументые стили используются для определения стилей целой веб-страницы. В теге head определяется тег style, в котором задаются все стили для веб-страницы.
-  Такое определение выглядит следующим образом:
-</p>
-<pre>
-        &lt;head&gt;
-        ...
-            &lt;style type="text/css"&gt;
-                p {
-                    color: red;
-                }
-            &lt;/style&gt;
-        ...
-        &lt;/head&gt;
-    </pre>
+<h1>Розклад занять</h1>
+<table border="1">
+    <caption>Розклад занять</caption>
+    <tr>
+        <th>День тижня</th>
+        <th>Академічні години</th>
+        <th>КН-2.01</th>
+        <th>КН-2.02</th>
+        <th>КН-2.03</th>
+    </tr>
+    <tr>
+        <td rowspan="4" style="writing-mode: vertical-rl; text-align: center;">Понеділок</td>
+        <td>8.00-9.20</td>
+        <td>Веб-технології та веб-дизайн</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>9.35-10.55</td>
+        <td>Об'єктно-орієнтоване програмування</td>
+        <td>Комп'ютерна дискретна математика</td>
+        <td>Теорія алгоритмів</td>
+    </tr>
+    <tr>
+        <td>11.10-12.30</td>
+        <td>Теорія алгоритмів</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>12.45-14.05</td>
+        <td>Комп'ютерна дискретна математика</td>
+        <td>Теорія алгоритмів</td>
+        <td>Об'єктно-орієнтоване програмування</td>
+    </tr>
+</table>
 
-<h2>Внешние стили</h2>
-<p>
-  Внешние стили используются для подключения одновременно ко многим страницам сайта. Обычно это отдельный CSS файл, который выглядит приблизительно следующим образом:
-</p>
-<pre>
-        p {
-            color: red;
-          }
+<h1>Форма реєстрації</h1>
+<form action="/submit" method="post">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required><br><br>
 
-        a {
-            color: blue;
-          }
-    </pre>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
 
-<p>
-  Если имя этого файла будет "style.css", то его подключают к HTML документу следующим образом:
-</p>
+    <label for="gender">Стать:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Чоловіча</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Жіноча</label><br><br>
 
-<pre>
-        &lt;!DOCTYPE HTML&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Пример CSS&lt;/title&gt;
-            &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
-        ...
-        &lt;/head&gt;
-    </pre>
+    <label for="comments">Коментарі:</label><br>
+    <textarea id="comments" name="comments"></textarea><br><br>
 
-<address>
-  Copyright 2024, CS
-</address>
+    <input type="submit" value="Відправити">
+</form>
 
-<footer>
-  <p>Copyright 2024</p>
-</footer>
 </body>
 </html>
